@@ -6,106 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
     <link rel="icon" type="image/x-icon" href="./images/LogoCreaMaille (2).png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
-
-    <nav id="presentation-barr">
+    <nav>
       <div class="logo">
-        <img src="images/LogoCreaMaille (2).png" alt="Logo KOOLSKICKS">
-        <h2>CréaMaille</h2>
+        <img src="./images/logoCreaMaille.png" alt="logo CréaMaille">
       </div>
-      <div class="button-container">
-        <a class="button primary" target="_blank" href="monpanier.html">Mon panier</a>
-        <img class="avatar" src="images/avatar.jpg" alt="avatar chien cool">
+        <ul>
+            <li><a href="#">Nouveautés</a></li>
+            <li><a href="#">Mes créations</a></li>
+            <li><a href="#">Nos patrons</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+      <div class="cart">
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
       </div>
     </nav>
-    <nav id="navigation">
-      <ul class="link-container">
-        <li>
-        <a class="link" href="#cards-box">Nouveauté</a>
-        </li>
-        <li>
-          <a class="link" href="boutique.html">Boutique</a>
-        </li>
-        <li>
-          <a class="link"  href="#">Contacter</a>
-        </li>
-       </ul>
-      </nav>
-        
+
     <main>
-      <div class="banner">
-           <div class="hero">
-              <h1>Nos derniers patrons</h1>
-              <p>Une courte description</p>
-           </div>
-     </div>
-      <div class="cards-box">
-          <h2 class="cards-box-tittle">Les nouveautés</h2>
-          <div class="cards-container">
-          <div class="card bunny">
-            <img src="images/Bunny.jpg" alt="image chaussures nike sneakers">
-               <div class="cardinfo"> 
-                  <div class="cardprice">
-                    <h2>Bunny</h2>
-                    <h3>2.50€</h3>
-                  </div>
-                  <p>Adoptez ce charmant lapin en crochet, parfait pour ajouter une touche de douceur et de tendresse 
-                    à votre décoration ou comme cadeau pour les petits et les grands !
-                  </p>
-                   <a class="button primary" target="_blank" href="">Ajouter au panier</a>      
-                </div>
-          </div>
+    <section class="hero">
+      <h2>Créez des merveilles avec nos patrons de crochet</h2>
+      <p data-aos="fade-right" data-aos-duration="3000">Découvrez des modèles exclusifs, adaptés à tous les niveaux.</p>
+    </section>
 
-          <div class="card sushi">
-            <img src="images/Sushi and Rolls Set Crochet Pattern - Etsy.png" alt="image chaussures nike sneakers">
-               <div class="cardinfo"> 
-                  <div class="cardprice">
-                    <h2>Sushi plate</h2>
-                    <h3>5€</h3>
-                  </div>
-                  <p>Craquez pour ces adorables sushis en crochet ! Une touche originale 
-                    et amusante pour décorer votre cuisine ou surprendre vos invités.
-                  </p>
-                   <a class="button primary" target="_blank" href="">Ajouter au panier</a>      
-                </div>
-          </div>
-
-          <div class="card plants">
-            <img src="images/plants.jpg" alt="image chaussures nike sneakers">
-               <div class="cardinfo"> 
-                  <div class="cardprice">
-                    <h2>Hanging plant</h2>
-                    <h3>2€</h3>
-                  </div>
-                  <p>Apportez une touche de verdure durable avec cette plante tombante en crochet.
-                    Sans entretien, elle embellira vos espaces en toute simplicité.
-                  </p>
-                   <a class="button primary" target="_blank" href="">Ajouter au panier</a>      
-                </div>
-          </div>
-
-          <div class="card zenitsu">
-            <img src="images/Zenitsu.png" alt="image chaussures nike sneakers">
-               <div class="cardinfo"> 
-                  <div class="cardprice">
-                    <h2>Zenitsu</h2>
-                    <h3>10€</h3>
-                  </div>
-                  <p>Revisitez l'univers de Demon Slayer avec cette reproduction crochetée de Zenitsu. 
-                    Un objet unique pour les fans de l'anime et d'artisanat !
-                  </p>
-                   <a class="button primary" target="_blank" href="">Ajouter au panier</a>      
-                </div>
+    <section id="nouveautes">
+      <h2 data-aos="fade-right" data-aos-duration="1000">Les Nouveautés</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="./images/Zenitsu.png" alt="Patron de crochet Zenitsu Demon Slayer">
+                <h3>Amigurumi Zenitsu</h3>
+                <p>Niveau : Intermédiaire</p>
+                <span class="price">5€</span>
+                <button>Acheter</button>
+            </div>
+            <div class="card">
+                <img src="./images/Bunny.jpg" alt="Patron de crochet porte clés lapin">
+                <h3>Lapin</h3>
+                <p>Niveau : Débutant</p>
+                <span class="price">3€</span>
+                <button>Acheter</button>
+            </div>
+            <div class="card">
+              <img src="./images/sushis.png" alt="Patron de crochet plateau de sushis">
+              <h3>Sushis</h3>
+              <p>Niveau : Intermédiaire</p>
+              <span class="price">8€</span>
+              <button>Acheter</button>
           </div>
         </div>
-      </div>
+    </section>
+    
+    <section id="creations">
+      <h2 data-aos="fade-right" data-aos-duration="1000">Mes créations</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="./images/coquetteBag.jpg" alt="Patron de crochet Zenitsu Demon Slayer">
+                <h3>Sac "Coquette"</h3>
+                <p>Niveau : Intermédiaire</p>
+                <span class="price">5€</span>
+                <button>Acheter</button>
+            </div>
+            <div class="card">
+                <img src="./images/porteCarte.jpg" alt="Patron de crochet porte clés lapin">
+                <h3>Porte-Cartes</h3>
+                <p>Niveau : Débutant</p>
+                <span class="price">3€</span>
+                <button>Acheter</button>
+            </div>
+            <div class="card">
+              <img src="./images/supportMirroir.jpg" alt="Patron de crochet plateau de sushis">
+              <h3>Sushis</h3>
+              <p>Niveau : Difficile</p>
+              <span class="price">8€</span>
+              <button>Acheter</button>
+          </div>
+        </div>
+    </section>
+
+    <section id="patrons">
+      <h2 data-aos="fade-right" data-aos-duration="1000">Nos patrons</h2>
+        <div class="cards">
+          <div class="card">
+              <img src="./images/sousVerre.jpg" alt="Patron de crochet gratuit 1">
+              <h3>Sous-verres Bohème</h3>
+              <p>Niveau : Facile</p>
+              <button>Acheter</button>
+          </div>
+          <div class="card">
+              <img src="./images/etoile.jpg" alt="Patron de crochet gratuit 2">
+              <h3>Petite Étoile</h3>
+              <p>Niveau : Facile</p>
+              <button>Acheter</button>
+          </div>
+          <div class="card">
+            <img src="./images/plants.jpg" alt="Patron de crochet gratuit 2">
+            <h3>Plante</h3>
+            <p>Niveau : Intermédiaire</p>
+            <button>Acheter</button>
+          </div>
+        </div>
+    </section>
     </main>
-    <footer>
-      <div class="footer">
-        <p>CréaMaille 2024</p>
+
+    <div id="scrollTop">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+
+  <footer id="contact">
+    <div class="footer-container">
+      <div class="text-bloc">
+          <h2 data-aos="zoom-in" data-aos-duration="1000">Rejoignez notre communauté</h2>
+          <div class="socials">
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+          </div>
       </div>
-    </footer>
-  </body>
+      <div class="newsletter">
+        <h3 data-aos="zoom-in" data-aos-duration="1000">Abonnez-vous à notre newsletter</h3>
+        <form action="#" method="POST">
+          <input type="email" name="email" placeholder="Votre email" required>
+          <button type="submit" class="newsletter-button">S'inscrire</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 CréaMaille. Tous droits réservés.</p>
+      <p>Contactez-nous : creamaille@example.com</p>
+    </div>    
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
+</body>
+
 </html>
